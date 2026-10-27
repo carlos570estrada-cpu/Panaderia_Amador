@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panaderia Amador</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PANADERIA AMADOR</div>
+        <nav>
+            <a href="#JUMBOTRON">Inicio</a>
+            <a href="#Catalogo">Catálogo</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#footer">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="jumbotron" class="jumbotron">
+            <div>
+                <h1>Un cafecito ☕ y un pan 🥖, y pa' qué quieres más 😋</h1>
+                <p>Pan artesanal recién horneado desde las 5am. Más de 7 variedades todos los dias. Haz tu pedido via WhatsApp.</p>
+                <form class="registro" onsubmit="return false;">
+                    <input type="email" placeholder="Tu correo para recibir promos" required>
+                    <button type="submit">Registrarme</button>
+                </form>
+            </div>
+            <div class="jumbo-img" style="background-image: url(./img/panes_8.jpeg);"></div>
+        </section>
+
+        <section id="Menu">
+            <h2 class="titulo-seccion">Nuestro Menu</h2>
+            <div class="Menu-panes">
+                <article class="card" style="background-image: url(./img/panes_1.jpeg)">
+                    <div class="textos">
+                        <h2>Mestizas</h2>
+                        <p>$2.00 C/U</p>
+                    </div>
+                </article>    
+                <article class="card" style="background-image: url(./img/panes_11.jpeg)">
+                    <div class="textos">
+                        <h2>Revueltas</h2>
+                        <p>$2.00 C/U</p>
+                    </div>
+                </article>    
+                <article class="card" style="background-image: url(./img/panes_7.jpeg)">
+                    <div class="textos">
+                        <h2>Conchas</h2>
+                        <p>$2.00 C/U</p>
+                    </div>
+                </article>    
+                <article class="card" style="background-image: url(./img/panes_6.jpeg)">
+                    <div class="textos">
+                        <h2>Azucarados</h2>
+                        <p>$5.00 C/U</p>
+                    </div>
+                </article>
+                <article class="card" style="background-image: url(./img/panes5.jpeg)">
+                    <div class="textos">
+                        <h2>Carteras y Polares</h2>
+                        <p>$6.00 C/U</p>
+                    </div>
+                </article>
+                <article class="card" style="background-image: url(./img/panes_3.jpeg)">
+                    <div class="textos">
+                        <h2>Pan de Huevo</h2>
+                        <p>$3.00 C/U</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="Contenedor">
+            <div class="banner" style="background-image: url(./img/panes_4.jpeg)">
+                <h2>Realiza Tu Pedido</h2>
+                <div id="Carrito-lista">
+                    <p>Has click en los panes para agregarlos</p>
+                </div>
+                <div>
+                    <h3>Total: $<span id="total">0.00</span></h3>
+                    <button class="boton" id="btn-pedido">Realizar Pedido Por WhatsApp</button>
+                    <p class="gracias">Gracias por tu compra, vuelve pronto.</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="beneficios" class="adicionales">
+            <div>
+                <h3>🔥 100% Artesanal</h3>
+                <p>Horno de leña, sin conservadores.</p>
+            </div>
+            <div>
+                <h3>🚚 Entrega rápida</h3>
+                <p>Llevamos tu pan calientito a casa.</p>
+            </div>
+            <div>
+                <h3>⭐ Testimonios</h3>
+                <p>"El mejor pan de la colonia" - 500 clientes felices.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <ul class="footer-left">
+            <li>
+                <a>7 Productos</a>
+            </li>
+            <li>
+                <a>Updated today</a>
+            </li>
+        </ul>
+        <ul class="footer-right">
+            <li>
+                <a href="#Catalogo">Productos</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/carlos_estrada2109">Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/share/1CUiep2yxQ/">Facebook</a>
+            </li>
+            <li>
+                <a href="#">WhatsApp</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>    
